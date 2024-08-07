@@ -74,14 +74,20 @@ async def random_verse(interaction: discord.Interaction, book_title: str, versio
 async def books(interaction: discord.Interaction):
     texts = load_texts()
     if texts:
-        output = "\n"
+        output = ""
         for book_title, book_info in texts.items():
             author = book_info.get('author', 'Desconhecido')
             code = book_info.get('code', 'Desconhecido')
             year = book_info.get('year', 'Desconhecido')
             description = book_info.get('description', 'Desconhecido')
-            versions = ', '.join(book_info['versions'].keys())
-            output += f"## **{book_title}**\n`Código`: {code}\n`Autor`: {author}\n`Ano`: {year}\n`Descrição`: *{description}*\n"
+            versions = ', '.join(version for version in book_info['versions'].keys())
+            links_str = ""
+            for version, version_info in book_info['versions'].items():
+                link = version_info.get('link')
+                if link:
+                    links_str += f"[[{version}]({link})] "
+
+            output += f"## **{book_title}**\n`Código`: {code}\n`Autor`: {author}\n`Ano`: {year}\n`Descrição`: *{description}*\n`Versões`: {links_str}\n"
         await interaction.response.send_message(output)
     else:
         output = 'Nenhum livro encontrado na base de dados.'
@@ -169,6 +175,17 @@ async def autocomplete_chapter(interaction: discord.Interaction, current: str) -
     if book_title and version and book_title in texts and version in texts[book_title]['versions']:
         chapters = texts[book_title]['versions'][version]['verses'].keys()
         return [Choice(name=chapter, value=str(chapter)) for chapter in chapters if str(current) in str(chapter)]
+    return []
+
+@get_verse_command.autocomplete('verse')
+async def autocomplete_verse(interaction: discord.Interaction, current: str) -> list[Choice]:
+    texts = load_texts()
+    book_title = next((option['value'] for option in interaction.data['options'] if option['name'] == 'book_title'), None)
+    version = next((option['value'] for option in interaction.data['options'] if option['name'] == 'version'), None)
+    chapter = next((option['value'] for option in interaction.data['options'] if option['name'] == 'chapter'), None)
+    if book_title and version and chapter and book_title in texts and version in texts[book_title]['versions'] and chapter in texts[book_title]['versions'][version]['verses']:
+        verses = texts[book_title]['versions'][version]['verses'][chapter].keys()
+        return [Choice(name=verse, value=int(verse)) for verse in verses if str(current) in str(verse)]
     return []
 
 # Auth token

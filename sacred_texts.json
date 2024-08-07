@@ -4,12 +4,9 @@
 		"author": "Aleister Crowley",
 		"year": 1904,
 		"description": "Este livro é a base do Novo Êon, e, portanto, de todo o nosso Trabalho. Recebido nos dias 8, 9 e 10 de abril de 1904.",
-		"links": {
-			"en":"https://hermetic.com/crowley/libers/lib220/",
-			"pt":"https://www.hadnu.org/publicacoes/liber-al-vel-legis-o-livro-da-lei/"
-		},
 		"versions": {
-			"en": {
+			"English": {
+				"link": "https://hermetic.com/crowley/libers/lib220/",
 				"verses": {
 					"I": {
 						"1": "Had! The manifestation of Nuit.",
@@ -239,7 +236,8 @@
 					}
 				}
 			},
-			"pt": {
+			"Português": {
+				"link": "https://www.hadnu.org/publicacoes/liber-al-vel-legis-o-livro-da-lei/",
 				"verses": {
 					"I": {
 						"1": "Had! A manifestação de Nuit.",
@@ -474,14 +472,11 @@
 	"Liber B vel Magi": {
 		"code": "I",
 		"author": "Aleister Crowley",
-		"year" : "",
+		"year" : "1911",
 		"description": "Um tratado do Grau de Magus, o mais alto grau que se é possível manifestar neste plano. Ou assim dizem os Mestres do Templo.",
-		"links": {
-			"en":"https://hermetic.com/crowley/libers/lib1/",
-			"pt":"https://www.hadnu.org/publicacoes/liber-b-vel-magi/"
-		},
 		"versions": {
-			"en": {
+			"English": {
+				"link": "https://hermetic.com/crowley/libers/lib1/",
 				"verses": {
 					"I": {
 						"-1": "One is the Magus: twain His forces: four His weapons. These are the Seven Spirits of Unrighteousness; seven vultures of evil. Thus is the art and craft of the Magus but glamour. How shall He destroy Himself?",
@@ -510,7 +505,8 @@
 					}
 				}
 			},
-			"pt": {
+			"Português": {
+				"link": "https://www.hadnu.org/publicacoes/liber-b-vel-magi/",
 				"verses": {
 					"I": {
 						"-1": "Um é o Magus: duas Suas forças: quatro Suas armas. Estes são os Sete Espíritos da Injustiça; sete abutres do mal. Assim é a arte e o ofício do Magus apenas glamour. Como Ele destruirá a Si?",

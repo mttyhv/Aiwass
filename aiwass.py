@@ -62,7 +62,7 @@ async def random_verse(interaction: discord.Interaction, book_title: str, versio
         chapter = random.choice(list(verses.keys()))
         verse = random.choice(list(verses[chapter].keys()))
         verse_text = verses[chapter][verse]
-        output = f"`{chapter}.{verse}`: *{verse_text}*"
+        output = f"`{chapter}.{verse}`:\n*{verse_text}*"
         await interaction.response.send_message(output)
     else:
         output = 'Livro ou versão não encontrada.'
@@ -74,13 +74,14 @@ async def random_verse(interaction: discord.Interaction, book_title: str, versio
 async def books(interaction: discord.Interaction):
     texts = load_texts()
     if texts:
-        output = "Livros disponíveis:\n\n"
+        output = "\n"
         for book_title, book_info in texts.items():
             author = book_info.get('author', 'Desconhecido')
             code = book_info.get('code', 'Desconhecido')
             year = book_info.get('year', 'Desconhecido')
+            description = book_info.get('description', 'Desconhecido')
             versions = ', '.join(book_info['versions'].keys())
-            output += f"Título: **{book_title}**\nCódigo: *{code}*\nAutor: *{author}*\nAno: *{year}*\nVersões: *{versions}*\n\n"
+            output += f"## **{book_title}**\n`Código`: {code}\n`Autor`: {author}\n`Ano`: {year}\n`Descrição`: *{description}*\n"
         await interaction.response.send_message(output)
     else:
         output = 'Nenhum livro encontrado na base de dados.'
@@ -110,7 +111,7 @@ async def search_verses(interaction: discord.Interaction, book_title: str, versi
     for chapter, chapter_verses in verses.items():
         for verse, text in chapter_verses.items():
             if all(keyword.lower() in text.lower() for keyword in keywords.split()):
-                results.append(f"`{chapter}.{verse}`: *{text}*")
+                results.append(f"`{chapter}.{verse}`:\n*{text}*")
                 count += 1  # Incrementa o contador
 
     if results:

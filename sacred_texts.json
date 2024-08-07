@@ -1,10 +1,15 @@
 {
-	"Liber Al Vel Legis": {
+	"Liber Al vel Legis": {
 		"code": "CCXX",
 		"author": "Aleister Crowley",
 		"year": 1904,
+		"description": "Este livro é a base do Novo Êon, e, portanto, de todo o nosso Trabalho. Recebido nos dias 8, 9 e 10 de abril de 1904.",
+		"links": {
+			"en":"https://hermetic.com/crowley/libers/lib220/",
+			"pt":"https://www.hadnu.org/publicacoes/liber-al-vel-legis-o-livro-da-lei/"
+		},
 		"versions": {
-			"en" : {
+			"en": {
 				"verses": {
 					"I": {
 						"1": "Had! The manifestation of Nuit.",
@@ -452,7 +457,7 @@
 						"64": "Que ele passe pela primeira ordália, & será para ele como prata.",
 						"65": "Pela segunda, ouro.",
 						"66": "Pela terceira, pedras de água preciosa.",
-						"67": "Pela quarta, ultimais fagulhas do fogo intimo.",
+						"67": "Pela quarta, ultimais fagulhas do fogo íntimo.",
 						"68": "No entanto a todos ele parecerá belo. Seus inimigos que não dizem assim, são meros mentirosos.",
 						"69": "Existe sucesso.",
 						"70": "Eu sou o Senhor de Cabeça de Falcão do Silêncio & da Força; minha nêmes cobre o céu azul-noturno.",
@@ -462,6 +467,76 @@
 						"74": "Existe um esplendor em meu nome oculto e glorioso, como o sol da meia-noite é sempre o filho.",
 						"75": "O fim das palavras é a Palavra Abrahadabra.\n\nO Livro da Lei está Escrito\ne Escondido.\n\nAum. Ha."
 					}
+				}
+			}
+		}
+	},
+	"Liber B vel Magi": {
+		"code": "I",
+		"author": "Aleister Crowley",
+		"year" : "",
+		"description": "Um tratado do Grau de Magus, o mais alto grau que se é possível manifestar neste plano. Ou assim dizem os Mestres do Templo.",
+		"links": {
+			"en":"https://hermetic.com/crowley/libers/lib1/",
+			"pt":"https://www.hadnu.org/publicacoes/liber-b-vel-magi/"
+		},
+		"versions": {
+			"en": {
+				"verses": {
+					"I": {
+						"-1": "One is the Magus: twain His forces: four His weapons. These are the Seven Spirits of Unrighteousness; seven vultures of evil. Thus is the art and craft of the Magus but glamour. How shall He destroy Himself?",
+						"0": "Yet the Magus hath power upon the Mother both directly and through Love. And the Magus is Love, and bindeth together That and This in His Conjuration.",
+						"1": "In the beginning doth the Magus speak Truth, and send forth Illusion and Falsehood to enslave the soul. Yet therein is the Mystery of Redemption.",
+						"2": "By His Wisdom made He the Worlds; the Word that is God is none other than He.",
+						"3": "How then shall He end His speech with Silence? For He is Speech.",
+						"4": "He is the First and the Last. How shall He cease to number Himself?",
+						"5": "By a Magus is this writing made known through the mind of a Magister. The one uttereth clearly, and the other understandeth; yet the Word is falsehood, and the Understanding darkness. And this saying is Of All Truth.",
+						"6": "Nevertheless it is written; for there be times of darkness, and this as a lamp therein.",
+						"7": "With the Wand createth He.",
+						"8": "With the Cup preserveth He.",
+						"9": "With the Dagger destroyeth He.",
+						"10": "With the Coin redeemeth He.",
+						"11": "His weapons fulfil the wheel; and on What Axle that turneth is not known unto Him.",
+						"12": "From all these actions must He cease before the curse of His Grade is uplifted from Him. Before He attain to That which existeth without Form.",
+						"13": "And if at this time He be manifested upon earth as a Man, and therefore is this present writing, let this be His method, that the curse of His grade, and the burden of His attainment, be uplifted from Him.",
+						"14": "Let Him beware of abstinence from action. For the curse of His grade is that He must speak Truth, that the Falsehood thereof may enslave the souls of men. Let Him then utter that without Fear, that the Law may be fulfilled. And according to His Original Nature will that law be shapen, so that one may declare gentleness and quietness, being an Hindu; and another fierceness and servility, being a Jew; and yet another ardour and manliness, being an Arab. Yet this matter toucheth the mystery of Incarnation, and is not here to be declared.",
+						"15": "Now the grade of a Magister teacheth the Mystery of Sorrow, and the grade of a Magus the Mystery of Change, and the grade of Ipsissimus the Mystery of Selflessness, which is called also the Mystery of Pan.",
+						"16": "Let the Magus then contemplate each in turn, raising it to the ultimate power of Infinity. Wherein Sorrow is Joy, and Change is Stability, and Selflessness is Self. For the interplay of the parts hath no action upon the whole. And this contemplation shall be performed not by simple meditation —how much less then by reason!— but by the method which shall have been given unto Him in His initiation to the Grade.",
+						"17": "Following which method, it shall be easy for Him to combine that trinity from its elements, and further to combine Sat-Chit-Ananda, and Light, Love, Life, three by three into nine that are one, in which meditation success shall be That which was first adumbrated to Him in the grade of Practicus (which reflecteth Mercury into the lowest world) in Liber XXVII, “Here is Nothing under its three Forms.”",
+						"18": "And this is the Opening of the Grade of Ipsissimus, and by the Buddhists it is called the trance Nerodha-Samapatti.",
+						"19": "And woe, woe, woe, yea woe, and again woe, woe, woe unto seven times be His that preacheth not His law to men!",
+						"20": "And woe also be unto Him that refuseth the curse of the grade of a Magus, and the burden of the Attainment thereof.",
+						"21": "And in the word CHAOS let the Book be sealed; yea, let the Book be sealed."
+					}
+				}
+			},
+			"pt": {
+				"verses": {
+					"I": {
+						"-1": "Um é o Magus: duas Suas forças: quatro Suas armas. Estes são os Sete Espíritos da Injustiça; sete abutres do mal. Assim é a arte e o ofício do Magus apenas glamour. Como Ele destruirá a Si?",
+						"0": "Porém o Magus tem poder sobre a Mãe tanto diretamente quanto através do Amor. E o Magus é Amor, e une Aquilo e Isto em Sua Conjuração.",
+						"1": "No princípio o Magus fala a Verdade, e envia Ilusão e Falsidade para escravizar a alma. No entanto ali está o Mistério da Redenção.",
+						"2": "Por sua Sabedoria Ele fez os Mundos; a Palavra que é Deus não é nenhuma outra senão Ele.",
+						"3": "Então como Ele finalizará Sua fala com Silêncio? Pois Ele é Fala.",
+						"4": "Ele é o Primeiro e o Último. Como Ele deixará de Se numerar?",
+						"5": "De um Magus este escrito é anunciado através da mente de um Magister. Um profere claramente, e o outro compreende; embora a Palavra seja falsidade, e o Entendimento escuridão. E essa declaração é De Toda Verdade.",
+						"6": "Todavia está escrito; pois há tempos de trevas, e neles é como uma lâmpada.",
+						"7": "Com a Vara Ele cria.",
+						"8": "Com a Taça Ele preserva.",
+						"9": "Com a Adaga Ele destrói.",
+						"10": "Com a Moeda Ele redime.",
+						"11": "Suas armas completam a roda; e sobre Qual Eixo que gira não é do conhecimento Dele.",
+						"12": "De todas essas ações Ele deve cessar antes que a maldição de Seu Grau seja removida Dele. Antes que Ele alcance Aquilo que existe sem Forma.",
+						"13": "E se neste momento Ele se manifestar sobre a terra como um Homem, e por essa razão o presente é escrito, que este seja o Seu método, que a maldição de Seu grau e o fardo de Sua consecução, sejam removidos Dele.",
+						"14": "Que Ele tome cuidado com a abstinência de ação. Pois a maldição do Seu grau é que Ele deve falar a Verdade, afim de que a Falsidade dela possa escravizar as almas dos homens. Então que Ele profira sem Medo, para que a Lei possa ser cumprida. E de acordo com Sua Natureza Original essa lei será moldada, de tal forma que alguém possa manifestar a gentileza e a quietude, sendo um Hindu; e outro a ferocidade e a servidão, sendo um Judeu; e ainda outro ardor e virilidade, sendo um Árabe. Contudo, este assunto toca o mistério da Encarnação, e não está para ser declarado aqui.",
+						"15": "Agora o grau de um Magister ensina o Mistério do Sofrimento, e o grau de um Magus o Mistério da Mudança, e o grau de Ipsissimus o Mistério da Abnegação, que também é chamado de o Mistério de Pã.",
+						"16": "Então que o Magus contemple um de cada vez, erguendo-o ao poder final da Infinidade. No qual o Sofrimento é Alegria, e Mudança é Estabilidade, e Abnegação é Eu. Pois a interação das partes não tem efeito sobre o todo. E esta contemplação não será realizada por uma simples meditação – então quanto menos pela razão? mas pelo método que terá sido dado a Ele em Sua iniciação ao Grau.",
+						"17": "Seguindo tal método, será fácil para Ele combinar essa trindade a partir de seus elementos, e ainda combinar Sat-Chit-Ananda, e Luz, Amor, Vida, três a três em nove que são um, em que o sucesso da meditação será Aquilo que Lhe foi primeiro esboçado no grau de Practicus (que reflete Mercúrio no mundo mais baixo) em Liber XXVII, “Aqui está o Nada sob suas três Formas”.",
+						"18": "E esta é a Abertura do Grau de Ipsissimus, e pelos Budistas é chamado de transe Nerodha-Samapatti.",
+						"19": "E ai, ai, ai, sim ai de, e novamente ai, ai, ai, sete vezes Daquele que não prega a Sua lei aos homens!",
+						"20": "E ai também Daquele que recusa a maldição do grau de um Magus, e o fardo de sua Consecução.",
+						"21": "E que na palavra CHAOS o Livro seja selado; sim, que o Livro seja selado."
+					}	
 				}
 			}
 		}

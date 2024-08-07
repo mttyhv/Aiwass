@@ -1,5 +1,2 @@
-/bot.py
-/config.json
-/logs.log
-/text.json
-/venv
+.env
+logs.log

@@ -1,14 +1,14 @@
+import os
 import json
 import random
 import discord
 from discord.ext import commands
 from discord.app_commands import Choice
 from datetime import datetime
+from dotenv import load_dotenv
 
-# Função para carregar configurações
-def load_config():
-    with open('config.json', 'r') as f:
-        return json.load(f)
+# Carrega as variáveis de ambiente do arquivo .env
+load_dotenv()
 
 # Função para carregar texto
 def load_texts():
@@ -136,7 +136,7 @@ async def search_verses(interaction: discord.Interaction, book_title: str, versi
                 await interaction.followup.send(current_message)
         output = "Resultados enviados!"
     else:
-        output = f"Nenhum resultado encontrado para a pesquisa de {keywords} em \"{book_title}\" (versão {version})."
+        output = f"Nenhum resultado encontrado para a pesquisa de {keywords} em \"{book_title}\"."
         await interaction.response.send_message(output)
     log_interaction(interaction.user, 'search', book_title, version, keywords, output=output)
 
@@ -171,6 +171,5 @@ async def autocomplete_chapter(interaction: discord.Interaction, current: str) -
     return []
 
 # Auth token
-config = load_config()
-TOKEN = config['DISCORD_TOKEN']
+TOKEN = os.getenv('DISCORD_TOKEN')
 bot.run(TOKEN)

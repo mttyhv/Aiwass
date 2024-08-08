@@ -146,7 +146,7 @@ async def search_verses(interaction: discord.Interaction, book: str, language: s
     else:
         output = f"Nenhum resultado encontrado para a pesquisa de {keywords} em \"{book}\"."
         await interaction.response.send_message(output)
-    log_interaction(interaction.user, 'search', book, version, keywords, output=output)
+    log_interaction(interaction.user, 'search', book, language, keywords, output=output)
 
 ### Autocompletes
 @random_verse.autocomplete('book')

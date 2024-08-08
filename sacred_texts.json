@@ -536,5 +536,73 @@
 				}
 			}
 		}
+	},
+	"Liber Trigrammaton": {
+		"code": "XXVII",
+		"author": "Aleister Crowley",
+		"year" : "1909",
+		"description": "Um Livro dos Trigramas das Mutações do Tao com o Yin e o Yang. Um relato do processo cósmico: correspondente às Estâncias de Dzyan em outro sistema.",
+		"versions": {
+			"English": {
+				"link":"https://hermetic.com/crowley/libers/lib27/",
+				"verses": {
+					"I": {
+						"1":"●\n●\n●\n\nHere is Nothing under its three forms. It is not, yet informeth all things.",
+						"2": "●\n●\n▬▬▬\n\nNow cometh the glory of the Single One, as an imperfection and stain.",
+						"3": "●\n●\n▬    ▬\n\nBut by the Weak One the Mother was it equilibrated.",
+						"4": "●\n▬▬▬\n●\n\nAlso the purity was divided by Strength, the force of the Demiurge.",
+						"5": "●\n▬    ▬\n●\n\n\nAnd the Cross was formulated in the Universe that as yet was not.",
+						"6": "▬▬▬\n●\n●\n\nBut now the Imperfection became manifest, presiding over the fading of perfection.",
+						"7": "▬    ▬\n●\n●\n\nAlso the Woman arose, and veiled the Upper Heaven with her body of stars.",
+						"8": "●\n▬▬▬\n▬▬▬\n\n\nNow then a giant arose, of terrible strength; and asserted the Spirit in a secret rite.",
+						"9": "●\n▬▬▬\n▬    ▬\n\nAnd the Master of the Temple balancing all things arose; his stature was above the Heaven and below Earth and Hell.",
+						"10": "●\n▬    ▬\n▬▬▬\n\nAgainst him the Brothers of the Left-hand Path, confusing the symbols. They concealed their horror [in this symbol]; for in truth they were\n\n▬▬▬\n▬    ▬\n●",
+						"11": "●\n▬    ▬\n▬    ▬\n\nThe master flamed forth as a star and set a guard of Water in every Abyss.",
+						"12": "▬▬▬\n●\n▬▬▬\n\nAlso certain secret ones concealed the Light of Purity in themselves, protecting it from the Persecutions.",
+						"13": "▬▬▬\n●\n▬    ▬\n\nLikewise also did certain sons and daughters of Hermes and of Aphrodite, more openly\n\n▬    ▬\n●\n▬▬▬\n\nBut the Enemy confused them. They pretended to conceal that Light, that they might betray it, and profane it.",
+						"14": "▬    ▬\n●\n▬    ▬\n\nYet certain holy nuns concealed the secret in songs upon the lyre.",
+						"15": "▬▬▬\n▬▬▬\n●\n\nNow did the Horror of Time pervert all things, hiding the Purity with a loathsome thing, a thing unnameable.",
+						"16": "▬▬▬\n▬    ▬\n●\n\n\nYea, and there arose sensualists upon the firmament, as a foul stain of storm upon the sky.",
+						"17": "▬    ▬\n▬▬▬\n●\n\nAnd the Black Brothers raised their heads; yea, they unveiled themselves without shame or fear.",
+						"18": "▬    ▬\n▬    ▬\n●\n\nAlso there rose up a soul of filth and of weakness, and it corrupted all the rule of the Tao.",
+						"19": "▬▬▬\n▬▬▬\n▬▬▬\n\nThen only was Heaven established to bear sway; for only in the lowest corruption is form manifest.",
+						"20": "▬▬▬\n▬▬▬\n▬    ▬\n\nAlso did Heaven manifest in violent light,\n\n▬▬▬\n▬    ▬\n▬▬▬\n\n\nAnd in soft light.",
+						"21": "▬    ▬\n▬▬▬\n▬▬▬\n\nThen were the waters gathered together from the heaven,\n\n▬▬▬\n▬    ▬\n▬    ▬\n\nAnd a crust of earth concealed the core of flame.",
+						"22": "▬    ▬\n▬▬▬\n▬    ▬\n\nAround the globe gathered the wide air,\n\n▬    ▬\n▬    ▬\n▬▬▬\n\nAnd men began to light fires upon the earth.",
+						"23": "▬    ▬\n▬    ▬\n▬    ▬\n\nTherefore was the end of it sorrow; yet in that sorrow a sixfold star of glory whereby they might see to return unto the stainless Abode; yea, unto the Stainless Abode."
+					}
+				}
+			},
+			"Português": {
+				"link": "https://www.hadnu.org/publicacoes/liber-trigrammaton/",
+				"verses":{
+					"I":{
+						"1":"●\n●\n●\n\nAqui está Nada sob suas três formas. Não é, no entanto dá forma a todas as coisas.",
+						"2": "●\n●\n▬▬▬\n\nAgora vem a glória do Singular, como uma imperfeição e mancha.",
+						"3": "●\n●\n▬    ▬\n\nMas pelo Fraco a Mãe foi ele equilibrado.",
+						"4": "●\n▬▬▬\n●\n\nTambém a pureza foi dividida pela Força, a força do Demiurgo.",
+						"5": "●\n▬    ▬\n●\n\n\nE a Cruz foi formulada no Universo que até então não era.",
+						"6": "▬▬▬\n●\n●\n\nMas agora a Imperfeição se tornou manifesta, presidindo sobre a desvanecimento da perfeição.",
+						"7": "▬    ▬\n●\n●\n\nTambém se levantou a Mulher, e velou o Céu Superior com seu corpo de estrelas.",
+						"8": "●\n▬▬▬\n▬▬▬\n\n\nEntão agora surgiu um gigante, de força terrível; e afirmou o Espírito em um rito secreto.",
+						"9": "●\n▬▬▬\n▬    ▬\n\nE surgiu o Mestre do Templo equilibrando todas as coisas; sua estatura estava acima do Céu e abaixo da Terra e do Inferno.",
+						"10": "●\n▬    ▬\n▬▬▬\n\nContra ele os Irmãos do Caminho da mão Esquerda, confundindo os símbolos. Eles esconderam seu horror [neste símbolo]; pois em verdade eles eram\n\n▬▬▬\n▬    ▬\n●",
+						"11": "●\n▬    ▬\n▬    ▬\n\nO mestre flamejou adiante como uma estrela e pôs uma guarda de Água em todo Abismo.",
+						"12": "▬▬▬\n●\n▬▬▬\n\nTambém certos secretos esconderam a Luz da Pureza em si mesmos, protegendo-a das Perseguições.",
+						"13": "▬▬▬\n●\n▬    ▬\n\nDe maneira semelhante também fizeram alguns filhos e filhas de Hermes e de Afrodite, mais abertamente\n\n▬    ▬\n●\n▬▬▬\n\nMas o Inimigo os confundiu. Eles fingiram esconder aquela Luz, para que pudessem traí-la, e profaná-la.",
+						"14": "▬    ▬\n●\n▬    ▬\n\nNo entanto, certas monjas santas esconderam o segredo em canções sobre a lira.",
+						"15": "▬▬▬\n▬▬▬\n●\n\nAgora o Horror do Tempo perverteu todas as coisas, escondendo a Pureza com uma coisa repugnante, uma coisa inominável.",
+						"16": "▬▬▬\n▬    ▬\n●\n\n\nSim, e ali surgiram sensualistas sobre o firmamento, como uma mancha suja de tempestade sobre o céu.",
+						"17": "▬    ▬\n▬▬▬\n●\n\nE os Irmãos Negros levantaram suas cabeças; sim, eles se desvelaram sem vergonha ou medo.",
+						"18": "▬    ▬\n▬    ▬\n●\n\nAli também se levantou uma alma de imundície e de fraqueza, e ela corrompeu todo o domínio do Tao.",
+						"19": "▬▬▬\n▬▬▬\n▬▬▬\n\nSó então foi estabelecido o Céu para governar; pois só na menor corrupção a forma é manifestada.",
+						"20": "▬▬▬\n▬▬▬\n▬    ▬\n\nO Céu também se manifestou em luz violenta,\n\n▬▬▬\n▬    ▬\n▬▬▬\n\n\nE em luz suave.",
+						"21": "▬    ▬\n▬▬▬\n▬▬▬\n\nEntão as águas foram reunidas a partir do céu,\n\n▬▬▬\n▬    ▬\n▬    ▬\n\nE uma crosta de terra escondeu o núcleo de chama.",
+						"22": "▬    ▬\n▬▬▬\n▬    ▬\n\nAo redor do globo reuniu o amplo ar,\n\n▬    ▬\n▬    ▬\n▬▬▬\n\nE os homens começaram a acender fogos sobre a terra.",
+						"23": "▬    ▬\n▬    ▬\n▬    ▬\n\nPortanto foi o fim disso sofrimento; no entanto naquele sofrimento uma estrela sêxtupla de glória pela qual eles poderiam retornar à Morada imaculada; sim, à Morada Imaculada."
+					}
+				}
+			}		
+		}
 	}
 }

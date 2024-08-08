@@ -51,7 +51,7 @@ async def get_verse_command(interaction: discord.Interaction, book: str, languag
     else:
         output = 'Verso não encontrado.'
         await interaction.response.send_message(output)
-    log_interaction(interaction.user, 'verse', book, version, chapter, verse, output=output)  # Registra o output
+    log_interaction(interaction.user, 'verse', book, language, chapter, verse, output=output)  # Registra o output
 
 # Comando para mostrar um verso aleatório, dado o livro e a versão
 @bot.tree.command(name='random', description='Mostra um verso aleatório')

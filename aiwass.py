@@ -70,7 +70,7 @@ async def random_verse(interaction: discord.Interaction, book: str, language: st
         await interaction.response.send_message(output)
     log_interaction(interaction.user, 'random', book, language, output=output)  # Registra o output
 
-# Comando para mostrar informações sobre todos os livros da database
+# Comando para mostrar informações sobre todos os livros do banco de dados
 @bot.tree.command(name='books', description='Mostra informações sobre os livros disponíveis')
 async def books(interaction: discord.Interaction):
     texts = load_texts()

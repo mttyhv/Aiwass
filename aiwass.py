@@ -77,8 +77,9 @@ async def books(interaction: discord.Interaction):
     if texts:
         output = ""
         for book, book_info in texts.items():
-            author = book_info.get('author', 'Desconhecido')
             code = book_info.get('code', 'Desconhecido')
+            _class = book_info.get('class', 'Desconhecido')
+            author = book_info.get('author', 'Desconhecido')
             year = book_info.get('year', 'Desconhecido')
             description = book_info.get('description', 'Desconhecido')
             versions = ', '.join(version for version in book_info['versions'].keys())
@@ -88,7 +89,7 @@ async def books(interaction: discord.Interaction):
                 if link:
                     links_str += f"[[{version}]({link})] "
 
-            output += f"## **{book}**\n`Código:` {code}\n`Autor:` {author}\n`Ano:` {year}\n`Versões:` {links_str}\n`Descrição:` *{description}*\n"
+            output += f"## {book} sub figurâ {code}\n`Classe:` {_class}\n`Autor:` {author}\n`Ano:` {year}\n`Versões:` {links_str}\n`Descrição:` *{description}*\n"
         await interaction.response.send_message(output)
     else:
         output = 'Nenhum livro encontrado na base de dados.'
@@ -96,8 +97,8 @@ async def books(interaction: discord.Interaction):
     log_interaction(interaction.user, 'books', output=output)  # Registra o output
 
 # Comando para mostrar versos que contenha o termo pesquisado
-@bot.tree.command(name='search', description='Pesquisa por versos')
-async def search_verses(interaction: discord.Interaction, book: str, language: str, keywords: str):
+@bot.tree.command(name='search', description='Pesquisa por termos em um livro')
+async def search(interaction: discord.Interaction, book: str, language: str, keywords: str):
     texts = load_texts()
     if book not in texts:
         output = f"O livro '{book}' não existe."
@@ -151,7 +152,7 @@ async def search_verses(interaction: discord.Interaction, book: str, language: s
 ### Autocompletes
 @random_verse.autocomplete('book')
 @get_verse_command.autocomplete('book')
-@search_verses.autocomplete('book')
+@search.autocomplete('book')
 async def autocomplete_book(interaction: discord.Interaction, current: str) -> list[Choice]:
     texts = load_texts()
     books = [book for book in texts.keys() if current.lower() in book.lower()]
@@ -159,7 +160,7 @@ async def autocomplete_book(interaction: discord.Interaction, current: str) -> l
 
 @random_verse.autocomplete('language')
 @get_verse_command.autocomplete('language')
-@search_verses.autocomplete('language')
+@search.autocomplete('language')
 async def autocomplete_version(interaction: discord.Interaction, current: str) -> list[Choice]:
     texts = load_texts()
     book = next((option['value'] for option in interaction.data['options'] if option['name'] == 'book'), None)
@@ -190,5 +191,5 @@ async def autocomplete_verse(interaction: discord.Interaction, current: str) -> 
     return []
 
 # Auth token
-TOKEN = os.getenv('DISCORD_TOKEN')
-bot.run(TOKEN)
+SIGIL = os.getenv('DISCORD_TOKEN')
+bot.run(SIGIL)

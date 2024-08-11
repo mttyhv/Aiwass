@@ -76,6 +76,9 @@ async def books(interaction: discord.Interaction):
     texts = load_texts()
     if texts:
         output = ""
+        message_limit = 1900
+        current_message = ""
+
         for book, book_info in texts.items():
             code = book_info.get('code', 'Desconhecido')
             _class = book_info.get('class', 'Desconhecido')
@@ -89,8 +92,27 @@ async def books(interaction: discord.Interaction):
                 if link:
                     links_str += f"[[{version}]({link})] "
 
-            output += f"## {book} sub figurâ {code}\n`Classe:` {_class}\n`Autor:` {author}\n`Ano:` {year}\n`Versões:` {links_str}\n`Descrição:` *{description}*\n"
-        await interaction.response.send_message(output)
+            book_output = f"## {book} sub figurâ {code}\n`Classe:` {_class}\n`Autor:` {author}\n`Ano:` {year}\n`Versões:` {links_str}\n`Descrição:` *{description}*\n"
+
+            # Verifica se a mensagem atual + a nova informação do livro excede o limite
+            if len(current_message + book_output) <= message_limit:
+                current_message += book_output
+            else:
+                # Envia a mensagem atual e começa uma nova
+                if not interaction.response.is_done():  # Primeira mensagem
+                    await interaction.response.send_message(current_message)
+                else:
+                    await interaction.followup.send(current_message)
+                current_message = book_output
+
+        # Envia a última mensagem, se houver
+        if current_message:
+            if not interaction.response.is_done():
+                await interaction.response.send_message(current_message)
+            else:
+                await interaction.followup.send(current_message)
+
+        output = "Informações sobre os livros enviadas!"
     else:
         output = 'Nenhum livro encontrado na base de dados.'
         await interaction.response.send_message(output)
